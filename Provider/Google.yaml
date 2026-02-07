@@ -55,6 +55,7 @@ payload:
   - DOMAIN-SUFFIX,app-measurement.com
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
   - DOMAIN-SUFFIX,googleapis.cn
+  - DOMAIN-SUFFIX,fastly-edge.com
   
   # === Android ===
   - DOMAIN-SUFFIX,android.com
