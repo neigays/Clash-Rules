@@ -10,7 +10,7 @@ experimental:
   ignore-resolve-fail: true
 dns:
   enable: true
-  respect-rules: true
+  #respect-rules: true
   ipv6: false
   listen: 0.0.0.0:53
   enhanced-mode: fake-ip
