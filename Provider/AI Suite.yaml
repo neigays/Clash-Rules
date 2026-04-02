@@ -28,6 +28,7 @@ payload:
   - DOMAIN-SUFFIX,anthropic.com
   - DOMAIN-SUFFIX,claude.ai
   - DOMAIN-SUFFIX,claudeusercontent.com
+  - DOMAIN-SUFFIX,claude.com
 
   # > Cloudflare AI Gateway
   - DOMAIN,gateway.ai.cloudflare.com
