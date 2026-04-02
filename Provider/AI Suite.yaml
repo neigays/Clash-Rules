@@ -32,6 +32,14 @@ payload:
   - DOMAIN-SUFFIX,siftscience.com
   - DOMAIN-SUFFIX,browser-intake-us5-datadoghq.com
   - DOMAIN-SUFFIX,api.segment.io
+  - DOMAIN-SUFFIX,datadog.pool.ntp.org
+  - DOMAIN-SUFFIX,datadoghq.com
+
+  # > Claude-Intercom相关的
+  - DOMAIN-SUFFIX,js.intercomcdn.com
+  - DOMAIN-SUFFIX,widget.intercom.io
+  - DOMAIN-SUFFIX,api-iam.intercom.io
+  - DOMAIN-SUFFIX,nexus-websocket-a.intercom.io
 
   # > Cloudflare AI Gateway
   - DOMAIN,gateway.ai.cloudflare.com
