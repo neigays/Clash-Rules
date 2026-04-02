@@ -32,6 +32,7 @@ payload:
   - DOMAIN-SUFFIX,sentry.io
   - DOMAIN-SUFFIX,siftscience.com
   - DOMAIN-SUFFIX,browser-intake-us5-datadoghq.com
+  - DOMAIN-SUFFIX,api.segment.io
 
   # > Cloudflare AI Gateway
   - DOMAIN,gateway.ai.cloudflare.com
