@@ -1,9 +1,5 @@
-# Google 服务完整分流规则
-# 更新时间：2026-01-19
-# 涵盖：Google搜索、Gmail、Drive、Play、YouTube、广告、分析、云服务等
-
 payload:
-  # === 核心 Google 域名 ===
+  # === Google 主域名 ===
   - DOMAIN-SUFFIX,google.com
   - DOMAIN-SUFFIX,google.com.hk
   - DOMAIN-SUFFIX,google.co.jp
@@ -13,75 +9,38 @@ payload:
   - DOMAIN-SUFFIX,google.de
   - DOMAIN-SUFFIX,google.fr
   - DOMAIN-SUFFIX,google.co.uk
+  - DOMAIN-SUFFIX,google.app
+  - DOMAIN-SUFFIX,google.dev
+  - DOMAIN-SUFFIX,g.co
+
+  # === Google API / 静态资源 / CDN ===
   - DOMAIN-SUFFIX,googleapis.com
+  - DOMAIN-SUFFIX,googleapis.cn
   - DOMAIN-SUFFIX,googleusercontent.com
   - DOMAIN-SUFFIX,gstatic.com
   - DOMAIN-SUFFIX,gstatic.cn
-  
-  # === Google 账户与登录 ===
-  - DOMAIN-SUFFIX,accounts.google.com
-  - DOMAIN-SUFFIX,myaccount.google.com
-  - DOMAIN-SUFFIX,accounts.youtube.com
-  - DOMAIN-SUFFIX,accounts.google.com.hk
-  
+  - DOMAIN-SUFFIX,gvt1.com
+  - DOMAIN-SUFFIX,gvt2.com
+  - DOMAIN-SUFFIX,gvt3.com
+  - DOMAIN-SUFFIX,gvt0.com
+  - DOMAIN-SUFFIX,1e100.net
+
   # === Gmail ===
   - DOMAIN-SUFFIX,gmail.com
   - DOMAIN-SUFFIX,googlemail.com
-  - DOMAIN-SUFFIX,mail.google.com
-  
+
   # === Google Drive & 文档协作 ===
-  - DOMAIN-SUFFIX,drive.google.com
-  - DOMAIN-SUFFIX,docs.google.com
-  - DOMAIN-SUFFIX,sheets.google.com
-  - DOMAIN-SUFFIX,slides.google.com
-  - DOMAIN-SUFFIX,forms.google.com
-  - DOMAIN-SUFFIX,sites.google.com
   - DOMAIN-SUFFIX,googledrive.com
   - DOMAIN-SUFFIX,googlehosted.com
-  
-  # === Google Play ===
-  - DOMAIN-SUFFIX,play.google.com
-  - DOMAIN-SUFFIX,play.googleapis.com
-  - DOMAIN-SUFFIX,android.clients.google.com
-  - DOMAIN-SUFFIX,googleplay.com
-  - DOMAIN-SUFFIX,play-fe.googleapis.com
-  - DOMAIN-SUFFIX,clients4.google.com
-  - DOMAIN-SUFFIX,clients2.google.com
-  - DOMAIN-SUFFIX,clients3.google.com
-  - DOMAIN-SUFFIX,clients1.google.com
-  - DOMAIN-SUFFIX,clients6.google.com
-  - DOMAIN-SUFFIX,market.android.com
-  - DOMAIN-SUFFIX,settings.google.com
-  - DOMAIN-SUFFIX,app-measurement.com
-  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
-  - DOMAIN-SUFFIX,googleapis.cn
-  - DOMAIN-SUFFIX,fastly-edge.com
-  
-  # === Android ===
+
+  # === Google Play / Android ===
   - DOMAIN-SUFFIX,android.com
-  - DOMAIN-SUFFIX,android.googleapis.com
-  - DOMAIN-SUFFIX,developer.android.com
-  - DOMAIN-SUFFIX,source.android.com
-  - DOMAIN-SUFFIX,androidify.com
-  - DOMAIN-SUFFIX,connectivitycheck.gstatic.com
-  - DOMAIN-SUFFIX,android.clients.google.com
-  - DOMAIN-SUFFIX,connectivitycheck.android.com
-  - DOMAIN-SUFFIX,mtalk.google.com
-  - DOMAIN-SUFFIX,alt1-mtalk.google.com
-  - DOMAIN-SUFFIX,alt2-mtalk.google.com
-  - DOMAIN-SUFFIX,alt3-mtalk.google.com
-  - DOMAIN-SUFFIX,alt4-mtalk.google.com
-  - DOMAIN-SUFFIX,alt5-mtalk.google.com
-  - DOMAIN-SUFFIX,alt6-mtalk.google.com
-  - DOMAIN-SUFFIX,alt7-mtalk.google.com
-  - DOMAIN-SUFFIX,alt8-mtalk.google.com
-  
-  # === Google 支付 ===
-  - DOMAIN-SUFFIX,pay.google.com
-  - DOMAIN-SUFFIX,payments.google.com
-  - DOMAIN-SUFFIX,wallet.google.com
-  - DOMAIN-SUFFIX,googlewallet.com
-  
+  - DOMAIN-SUFFIX,googleplay.com
+  - DOMAIN-SUFFIX,market.android.com
+  - DOMAIN-SUFFIX,app-measurement.com
+  # xn--ngstr-lra8j.com 是 Google Play 使用的国际化域名
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
+
   # === Google 广告与分析 ===
   - DOMAIN-SUFFIX,googleadservices.com
   - DOMAIN-SUFFIX,googlesyndication.com
@@ -89,181 +48,70 @@ payload:
   - DOMAIN-SUFFIX,googletagservices.com
   - DOMAIN-SUFFIX,google-analytics.com
   - DOMAIN-SUFFIX,doubleclick.net
-  - DOMAIN-SUFFIX,googleads.g.doubleclick.net
-  - DOMAIN-SUFFIX,adservice.google.com
-  - DOMAIN-SUFFIX,adsense.google.com
+  - DOMAIN-SUFFIX,admob.com
   - DOMAIN-SUFFIX,adsensecustomsearchads.com
-  
-  # === Google reCAPTCHA 验证码 ===
+
+  # === Google reCAPTCHA ===
   - DOMAIN-SUFFIX,recaptcha.net
-  - DOMAIN-SUFFIX,recaptcha.google.com
-  - DOMAIN-SUFFIX,www.recaptcha.net
-  
-  # === Google 下载与更新 ===
-  - DOMAIN-SUFFIX,dl.google.com
-  - DOMAIN-SUFFIX,dl-ssl.google.com
-  - DOMAIN-SUFFIX,update.googleapis.com
-  - DOMAIN-SUFFIX,redirector.gvt1.com
-  
+
   # === Firebase & Cloud Messaging ===
-  - DOMAIN-SUFFIX,fcm.googleapis.com
-  - DOMAIN-SUFFIX,fcmtoken.googleapis.com
-  - DOMAIN-SUFFIX,firebase.google.com
-  - DOMAIN-SUFFIX,firebase.googleapis.com
   - DOMAIN-SUFFIX,firebaseapp.com
   - DOMAIN-SUFFIX,firebaseio.com
-  - DOMAIN-SUFFIX,firebasestorage.googleapis.com
-  
+  - DOMAIN-SUFFIX,page.link
+  - DOMAIN-SUFFIX,crashlytics.com
+
   # === Google Cloud Platform ===
-  - DOMAIN-SUFFIX,cloud.google.com
-  - DOMAIN-SUFFIX,console.cloud.google.com
-  - DOMAIN-SUFFIX,appengine.google.com
   - DOMAIN-SUFFIX,gcr.io
-  - DOMAIN-SUFFIX,storage.googleapis.com
-  
+  - DOMAIN-SUFFIX,pki.goog
+  - DOMAIN-SUFFIX,registry.google
+
   # === Google 博客服务 ===
   - DOMAIN-SUFFIX,blogspot.com
   - DOMAIN-SUFFIX,blogger.com
   - DOMAIN-SUFFIX,blogblog.com
-  - DOMAIN-SUFFIX,blogspot.hk
-  - DOMAIN-SUFFIX,blogspot.jp
-  - DOMAIN-SUFFIX,blogspot.tw
-  
+
   # === Chrome & Chromium ===
   - DOMAIN-SUFFIX,chrome.com
   - DOMAIN-SUFFIX,chromium.org
-  - DOMAIN-SUFFIX,chromewebstore.google.com
-  - DOMAIN-SUFFIX,chrome.google.com
-  
-  # === Google Maps & 地理位置 ===
-  - DOMAIN-SUFFIX,maps.google.com
-  - DOMAIN-SUFFIX,maps.googleapis.com
-  - DOMAIN-SUFFIX,maps.gstatic.com
-  - DOMAIN-SUFFIX,google.com/maps
-  - DOMAIN-SUFFIX,earthengine.google.com
-  
-  # === Google 翻译 ===
-  - DOMAIN-SUFFIX,translate.google.com
-  - DOMAIN-SUFFIX,translate.googleapis.com
-  
-  # === Google Photos ===
-  - DOMAIN-SUFFIX,photos.google.com
-  - DOMAIN-SUFFIX,googlephoto.com
-  - DOMAIN-SUFFIX,googlephotos.com
-  
-  # === Google Meet & Chat ===
-  - DOMAIN-SUFFIX,meet.google.com
-  - DOMAIN-SUFFIX,chat.google.com
-  - DOMAIN-SUFFIX,hangouts.google.com
-  
-  # === Google Calendar ===
-  - DOMAIN-SUFFIX,calendar.google.com
-  - DOMAIN-SUFFIX,contacts.google.com
-  
-  # === Google Keep ===
-  - DOMAIN-SUFFIX,keep.google.com
-  
+
   # === AMP 项目 ===
   - DOMAIN-SUFFIX,ampproject.org
-  - DOMAIN-SUFFIX,amp.dev
   - DOMAIN-SUFFIX,ampproject.net
-  
-  # === Google Video 服务（非YouTube）===
-  - DOMAIN-SUFFIX,gvt1.com
-  - DOMAIN-SUFFIX,gvt2.com
-  - DOMAIN-SUFFIX,gvt3.com
-  - DOMAIN-SUFFIX,video.google.com
-  
-  # === Google Books ===
-  - DOMAIN-SUFFIX,books.google.com
-  - DOMAIN-SUFFIX,googlebooks.com
-  
+  - DOMAIN-SUFFIX,amp.dev
+
   # === Google Fonts ===
-  - DOMAIN-SUFFIX,fonts.googleapis.com
-  - DOMAIN-SUFFIX,fonts.gstatic.com
   - DOMAIN-SUFFIX,googlefonts.com
-  
-  # === Google 开发者服务 ===
-  - DOMAIN-SUFFIX,developers.google.com
-  - DOMAIN-SUFFIX,developer.chrome.com
-  - DOMAIN-SUFFIX,codelabs.developers.google.com
-  
-  # === Google Domains ===
-  - DOMAIN-SUFFIX,domains.google.com
-  
-  # === Google Workspace (G Suite) ===
-  - DOMAIN-SUFFIX,workspace.google.com
-  - DOMAIN-SUFFIX,gsuite.google.com
-  
-  # === Google Assistant ===
-  - DOMAIN-SUFFIX,assistant.google.com
-  
-  # === Google News ===
-  - DOMAIN-SUFFIX,news.google.com
-  
-  # === Google Podcasts ===
-  - DOMAIN-SUFFIX,podcasts.google.com
-  
-  # === Google Shopping ===
-  - DOMAIN-SUFFIX,shopping.google.com
-  
-  # === Google Trends ===
-  - DOMAIN-SUFFIX,trends.google.com
-  
-  # === Google Stadia ===
-  - DOMAIN-SUFFIX,stadia.google.com
-  - DOMAIN-SUFFIX,ggpht.com
-  
-  # === Google Nest ===
-  - DOMAIN-SUFFIX,nest.com
-  
-  # === Waze (Google旗下) ===
-  - DOMAIN-SUFFIX,waze.com
-  
-  # === Fitbit (Google旗下) ===
-  - DOMAIN-SUFFIX,fitbit.com
-  
+
   # === Google 短链接 ===
   - DOMAIN-SUFFIX,goo.gl
-  - DOMAIN-SUFFIX,g.co
-  
-  # === Google Scholar ===
-  - DOMAIN-SUFFIX,scholar.google.com
-  
-  # === Google 其他重要服务 ===
-  - DOMAIN-SUFFIX,googlestore.com
-  - DOMAIN-SUFFIX,madeby.google.com
-  - DOMAIN-SUFFIX,withgoogle.com
-  - DOMAIN-SUFFIX,abc.xyz
-  - DOMAIN-SUFFIX,admob.com
+
+  # === Google Stadia ===
+  - DOMAIN-SUFFIX,ggpht.com
+
+  # === Google Nest ===
+  - DOMAIN-SUFFIX,nest.com
+
+  # === Waze (Google旗下) ===
+  - DOMAIN-SUFFIX,waze.com
+
+  # === Fitbit (Google旗下) ===
+  - DOMAIN-SUFFIX,fitbit.com
+
+  # === Google Fiber ===
+  - DOMAIN-SUFFIX,googlefiber.net
+
+  # === Google 旗下开源/技术社区 ===
   - DOMAIN-SUFFIX,tensorflow.org
   - DOMAIN-SUFFIX,golang.org
   - DOMAIN-SUFFIX,godoc.org
   - DOMAIN-SUFFIX,kaggle.com
   - DOMAIN-SUFFIX,waymo.com
-  
-  # === Google CDN ===
-  - DOMAIN-SUFFIX,gvt0.com
-  - DOMAIN-SUFFIX,1e100.net
-  #- DOMAIN-SUFFIX,googlevideo.com
-  
-  # === Google API 域名 ===
-  - DOMAIN-SUFFIX,clientservices.googleapis.com
-  - DOMAIN-SUFFIX,pki.goog
-  - DOMAIN-SUFFIX,registry.google
-  
-  # === Google 支持与帮助 ===
-  - DOMAIN-SUFFIX,support.google.com
-  
-  # === Crashlytics (Firebase) ===
-  - DOMAIN-SUFFIX,crashlytics.com
-  
-  # === Google Fiber ===
-  - DOMAIN-SUFFIX,googlefiber.net
-  
-  # === Material Design ===
   - DOMAIN-SUFFIX,material.io
-  
-  # === Web.dev ===
   - DOMAIN-SUFFIX,web.dev
+  - DOMAIN-SUFFIX,abc.xyz
+  - DOMAIN-SUFFIX,withgoogle.com
 
+  # === Google 商店 ===
+  - DOMAIN-SUFFIX,googlestore.com
+  - DOMAIN-SUFFIX,madeby.google.com
+  - DOMAIN-SUFFIX,fastly-edge.com
