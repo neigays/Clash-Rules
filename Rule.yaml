@@ -226,7 +226,7 @@ rule-providers:
     url: 'https://raw.githubusercontent.com/neigays/Clash-Rules/refs/heads/main/Provider/Media/YouTube.yaml'
     path: ./Rules/Media/YouTube
     interval: 86400
-  YouTube:
+  Google:
     type: http
     behavior: classical
     url: 'https://raw.githubusercontent.com/neigays/Clash-Rules/refs/heads/main/Provider/Google.yaml'
