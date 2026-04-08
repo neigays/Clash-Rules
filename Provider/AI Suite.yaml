@@ -107,6 +107,10 @@ payload:
 
   # > Meta AI
   - DOMAIN-SUFFIX,meta.ai
+  - DOMAIN-SUFFIX,facebook.com
+  - DOMAIN-SUFFIX,meta.com
+  - DOMAIN-SUFFIX,fbcdn.net
+  
 
   # > OpenArt
   - DOMAIN-SUFFIX,openart.ai
