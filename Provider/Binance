@@ -1,0 +1,25 @@
+payload:
+  - DOMAIN-SUFFIX,binance.info
+  - DOMAIN-SUFFIX,saasexch.info
+  - DOMAIN-SUFFIX,binance.click
+  - DOMAIN-SUFFIX,binance.com
+  - DOMAIN-SUFFIX,qa1fdg.net
+  - DOMAIN-SUFFIX,forter.com
+  - DOMAIN-SUFFIX,bnbstatic.com
+  - DOMAIN-SUFFIX,asterdex.tv
+  - DOMAIN-SUFFIX,walletconnect.org
+  - DOMAIN-SUFFIX,asterapp.me
+  - DOMAIN-SUFFIX,asterdex.mobi
+  - DOMAIN-SUFFIX,bscdnweb.com
+
+  - DOMAIN-SUFFIX,binance.cloud
+  - DOMAIN-SUFFIX,binance.me
+  - DOMAIN-SUFFIX,binancecnt.com
+  - DOMAIN-SUFFIX,binancefuture.com
+  - DOMAIN-SUFFIX,bnappzh.co
+  - DOMAIN-SUFFIX,bnbzh.ac
+  - DOMAIN-SUFFIX,bntrace.com
+  - DOMAIN-SUFFIX,saasexch.com
+  - DOMAIN-SUFFIX,saasexch.cc
+  - DOMAIN-SUFFIX,saasexch.info
+  - DOMAIN-SUFFIX,appsflayer.com 
