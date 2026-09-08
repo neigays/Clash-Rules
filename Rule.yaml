@@ -49,6 +49,7 @@
 
   - RULE-SET,Telegram,Telegram
 
+  - RULE-SET,Binance,Binance
   - RULE-SET,Crypto,Crypto
   - RULE-SET,Discord,Discord
   - RULE-SET,Google FCM,Google FCM
@@ -390,6 +391,12 @@ rule-providers:
     behavior: classical
     url: 'https://fastly.jsdelivr.net/gh/dler-io/Rules@main/Clash/Provider/Telegram.yaml'
     path: ./Rules/Telegram
+    interval: 86400
+  Binance:
+    type: http
+    behavior: classical
+    url: 'https://raw.githubusercontent.com/neigays/Clash-Rules/refs/heads/main/Provider/Binance.yaml'
+    path: ./Rules/Binance
     interval: 86400
   Crypto:
     type: http
