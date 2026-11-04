@@ -5,7 +5,7 @@
   - RULE-SET,Disney Plus,Disney Plus
   - RULE-SET,YouTube,YouTube
 #   - RULE-SET,YouTube Music,YouTube
-#  - RULE-SET,Google,Google
+  - RULE-SET,Google,Google
   - RULE-SET,Max,Max
   - RULE-SET,Spotify,Spotify
 
@@ -53,8 +53,8 @@
   - RULE-SET,Crypto,Crypto
   - RULE-SET,Discord,Discord
   - RULE-SET,Google FCM,Google FCM
-  - RULE-SET,Microsoft,Microsoft
   - RULE-SET,AI Suite,AI Suite
+  - RULE-SET,Microsoft,Microsoft
   - RULE-SET,PayPal,PayPal
   - RULE-SET,Scholar,Scholar
   - RULE-SET,Speedtest,Speedtest
@@ -140,12 +140,12 @@ rule-providers:
     url: 'https://fastly.jsdelivr.net/gh/dler-io/Rules@main/Clash/Provider/Media/YouTube.yaml'
     path: ./Rules/Media/YouTube
     interval: 86400
-  #Google:
-  #  type: http
-  #  behavior: classical
-  #  url: 'https://raw.githubusercontent.com/neigays/Clash-Rules/refs/heads/main/Provider/Google.yaml'
-  #  path: ./Rules/Google
-  #  interval: 86400
+  Google:
+    type: http
+    behavior: classical
+    url: 'https://raw.githubusercontent.com/neigays/Clash-Rules/refs/heads/main/Provider/Google.yaml'
+    path: ./Rules/Google
+    interval: 86400
   Max:
     type: http
     behavior: classical
