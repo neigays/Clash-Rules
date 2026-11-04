@@ -84,6 +84,7 @@ payload:
 
   # > Claude
   - DOMAIN-SUFFIX,anthropic.com
+  - DOMAIN-SUFFIX,clau.de
   - DOMAIN-SUFFIX,claude.ai
   - DOMAIN-SUFFIX,claudeusercontent.com
   - DOMAIN-SUFFIX,claude.com
@@ -94,11 +95,13 @@ payload:
   - DOMAIN-SUFFIX,datadog.pool.ntp.org
   - DOMAIN-SUFFIX,datadoghq.com
 
-  # > Claude-Intercom相关的
-  - DOMAIN-SUFFIX,js.intercomcdn.com
-  - DOMAIN-SUFFIX,widget.intercom.io
-  - DOMAIN-SUFFIX,api-iam.intercom.io
-  - DOMAIN-SUFFIX,nexus-websocket-a.intercom.io
+  # Claude 的 Intercom 依赖已由上方 intercom.io / intercomcdn.com 覆盖
+
+  # > Cohere
+  # Hong Kong is a restricted location in the SaaS agreement
+  # https://cohere.com/saas-agreement
+  - DOMAIN-SUFFIX,cohere.ai
+  - DOMAIN-SUFFIX,cohere.com
 
   # > Cloudflare AI Gateway
   - DOMAIN,gateway.ai.cloudflare.com
