@@ -5,7 +5,6 @@
   - RULE-SET,Disney Plus,Disney Plus
   - RULE-SET,YouTube,YouTube
 #   - RULE-SET,YouTube Music,YouTube
-  - RULE-SET,Google,Google
   - RULE-SET,Max,Max
   - RULE-SET,Spotify,Spotify
 
@@ -54,6 +53,7 @@
   - RULE-SET,Discord,Discord
   - RULE-SET,Google FCM,Google FCM
   - RULE-SET,AI Suite,AI Suite
+  - RULE-SET,Google,Google
   - RULE-SET,Microsoft,Microsoft
   - RULE-SET,PayPal,PayPal
   - RULE-SET,Scholar,Scholar
@@ -78,7 +78,7 @@
   - RULE-SET,LAN,DIRECT
   - GEOIP,CN,Domestic
   - MATCH,Others
-        
+
 rule-providers:
   AdBlock:
     type: http

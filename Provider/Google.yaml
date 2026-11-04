@@ -12,6 +12,9 @@ payload:
   - DOMAIN-SUFFIX,google.app
   - DOMAIN-SUFFIX,google.dev
   - DOMAIN-SUFFIX,g.co
+  # .google / .goog 顶级域（blog.google、pki.goog 等）
+  - DOMAIN-SUFFIX,google
+  - DOMAIN-SUFFIX,goog
 
   # === Google API / 静态资源 / CDN ===
   - DOMAIN-SUFFIX,googleapis.com
@@ -36,7 +39,6 @@ payload:
   # === Google Play / Android ===
   - DOMAIN-SUFFIX,android.com
   - DOMAIN-SUFFIX,googleplay.com
-  - DOMAIN-SUFFIX,market.android.com
   - DOMAIN-SUFFIX,app-measurement.com
   # xn--ngstr-lra8j.com 是 Google Play 使用的国际化域名
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
@@ -62,8 +64,6 @@ payload:
 
   # === Google Cloud Platform ===
   - DOMAIN-SUFFIX,gcr.io
-  - DOMAIN-SUFFIX,pki.goog
-  - DOMAIN-SUFFIX,registry.google
 
   # === Google 博客服务 ===
   - DOMAIN-SUFFIX,blogspot.com
@@ -113,5 +113,3 @@ payload:
 
   # === Google 商店 ===
   - DOMAIN-SUFFIX,googlestore.com
-  - DOMAIN-SUFFIX,madeby.google.com
-  - DOMAIN-SUFFIX,fastly-edge.com
