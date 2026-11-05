@@ -94,8 +94,8 @@ payload:
   - DOMAIN-SUFFIX,api.segment.io
   - DOMAIN-SUFFIX,datadog.pool.ntp.org
   - DOMAIN-SUFFIX,datadoghq.com
-
-  # Claude 的 Intercom 依赖已由上方 intercom.io / intercomcdn.com 覆盖
+  - DOMAIN-SUFFIX,hcaptcha.com
+  - DOMAIN-SUFFIX,anthropic.auth0.com
 
   # > Cohere
   # Hong Kong is a restricted location in the SaaS agreement
