@@ -21,12 +21,24 @@ dns:
     - 223.5.5.5
     - 119.29.29.29
   nameserver:
-    - https://cloudflare-dns.com/dns-query
-    - https://dns.cloudflare.com/dns-query
-    - https://dns.google/dns-query
-    - https://dns.quad9.net/dns-query
-    # - https://doh.pub/dns-query
-    # - https://dns.alidns.com/dns-query
+    # - https://cloudflare-dns.com/dns-query
+    # - https://dns.cloudflare.com/dns-query
+    # - https://dns.google/dns-query
+    # - https://dns.quad9.net/dns-query
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+    # 代理节点域名解析，避免 DNS 循环依赖
+  proxy-server-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  # 国内外域名智能分流
+  nameserver-policy:
+    "geosite:cn":
+      - https://dns.alidns.com/dns-query
+      - https://doh.pub/dns-query
+    "geosite:geolocation-!cn":
+      - https://dns.google/dns-query
+      - https://dns.quad9.net/dns-query
   fake-ip-filter:
     - "*.lan"
     - "*.localdomain"
