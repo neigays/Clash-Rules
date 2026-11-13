@@ -24,8 +24,8 @@ dns:
     - https://dns.cloudflare.com/dns-query
     - https://dns.google/dns-query
     - https://dns.quad9.net/dns-query
-    # - https://doh.pub/dns-query
-    # - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
   fake-ip-filter:
     - "*.lan"
     - "*.localdomain"
