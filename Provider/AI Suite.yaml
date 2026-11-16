@@ -97,6 +97,9 @@ payload:
   - DOMAIN-SUFFIX,hcaptcha.com
   - DOMAIN-SUFFIX,anthropic.auth0.com
 
+  # > Cloudflare AI Gateway
+  - DOMAIN,gateway.ai.cloudflare.com
+
   # > Cohere
   # Hong Kong is a restricted location in the SaaS agreement
   # https://cohere.com/saas-agreement
